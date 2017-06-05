@@ -1,0 +1,4 @@
+{{cookiecutter.domain_name}}
+
+log   stdout
+error stderr

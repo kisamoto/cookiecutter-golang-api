@@ -1,0 +1,8 @@
+package: {{cookiecutter.repo}}
+import:
+- package: github.com/bitly/go-notify
+- package: github.com/jmoiron/sqlx
+- package: github.com/gorilla/mux
+- package: github.com/spf13/viper
+- package: github.com/lib/pq
+- package: go.uber.org/zap
