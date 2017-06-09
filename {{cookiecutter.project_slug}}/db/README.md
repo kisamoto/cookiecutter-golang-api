@@ -24,3 +24,7 @@ Make sure the `flyway` CLI tool is [installed on the system](https://flywaydb.or
 $ cd {{cookiecutter.project_slug}}/db/
 $ flyway 
 ```
+
+## Audit trail
+
+An audit trail on `INSERT`, `UPDATE` and `DELETE` operations is run as a trigger as detailed on the [PosgreSQL Wiki](https://wiki.postgresql.org/wiki/Audit_trigger)

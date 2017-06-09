@@ -1,4 +1,4 @@
-package: {{cookiecutter.repo}}
+package: github.com/kisamoto/go_api
 import:
 - package: github.com/bitly/go-notify
 - package: github.com/jmoiron/sqlx

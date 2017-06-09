@@ -53,5 +53,5 @@ Some models and services are provided out-of-the-box as they are fairly commonpl
 
 Model | Purpose
 ------|---------
-`AccountCredentials` | Holds account credentials performing password validation and verification
+`AccountCredentials` | Holds account credentials performing password validation and verification. Passwords are hashed with `bcrypt` before being stored in the database.
 `AccountProfile` | Holds user preferences; profile information etc.
