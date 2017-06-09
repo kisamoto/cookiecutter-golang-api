@@ -21,7 +21,7 @@ More information is found in the internal [`README`]({{cookiecutter.project_slug
 
 ## ToDo
 
-- [] `Dockerfile` - 
-- [] `docker-compose.yml`
-- [] `Caddyfile` - Configured without Let's Encrypt for development usage but as close to production setup as possible
-- [] `Makefile` - Should include commands to build API; deploy with Docker; setup cluster with docker-compose; unit test API; functionally test API
+- [ ] `Dockerfile` - 
+- [ ] `docker-compose.yml`
+- [ ] `Caddyfile` - Configured without Let's Encrypt for development usage but as close to production setup as possible
+- [ ] `Makefile` - Should include commands to build API; deploy with Docker; setup cluster with docker-compose; unit test API; functionally test API
