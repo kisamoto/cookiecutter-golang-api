@@ -1,9 +1,14 @@
-FROM golang:1.8-alpine
-
-ENV GLIDE_VERSION 0.12.3
-
-WORKDIR /go/src/app
-
+# Builder image
+FROM golang:1.8-alpine as builder
+WORKDIR /go/src/{{ cookiecutter.repo }}
 COPY . .
+RUN go build ./bin/api
 
-RUN wget -O glide.tar.gz https://github.com/Masterminds/glide/releases/download/v${GLIDE_VERSION}/glide-v${GLIDE_VERSION}-linux-amd64.tar.gz
+# Actual minimal deployment image 
+FROM alpine:3.6
+ENV APP_DIR /opt/app
+WORKDIR $APP_DIR
+COPY --from=builder /go/src/{{ cookiecutter.repo }}/api .
+RUN chmod -R 777 $APP_DIR/api
+CMD ["./api"]
+{% endraw %}
