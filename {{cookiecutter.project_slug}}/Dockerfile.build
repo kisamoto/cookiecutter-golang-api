@@ -1,0 +1,19 @@
+FROM golang:1.8-alpine
+
+ENV GLIDE_VERSION 0.12.3
+ENV TMPDIR /tmp
+
+RUN apk update \
+  && apk --no-cache add ca-certificates git openssl \
+  && update-ca-certificates
+
+WORKDIR /go/src/{{ cookiecutter.repo }}
+
+COPY . .
+
+RUN wget -O $TMPDIR/glide.tar.gz https://github.com/Masterminds/glide/releases/download/v$GLIDE_VERSION/glide-v$GLIDE_VERSION-linux-amd64.tar.gz \
+  && tar zxf $TMPDIR/glide.tar.gz \
+  && ./linux-amd64/glide install \
+  && go build ./bin/api \
+  && rm -rf $TMPDIR/*
+
