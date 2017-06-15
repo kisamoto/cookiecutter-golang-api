@@ -11,4 +11,3 @@ WORKDIR $APP_DIR
 COPY --from=builder /go/src/{{ cookiecutter.repo }}/api .
 RUN chmod -R 777 $APP_DIR/api
 CMD ["./api"]
-{% endraw %}
