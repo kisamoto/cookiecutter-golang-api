@@ -1,3 +1,5 @@
+.PHONY: docker-build
+
 docker-build:
 	@echo Building {{ cookiecutter.repo }}:build
 	@echo

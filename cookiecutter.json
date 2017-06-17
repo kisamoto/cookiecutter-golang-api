@@ -1,6 +1,8 @@
 {
   "project_name": "Go API",
   "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "project_description": "A Go powered API ",
+  "version": "0.1.0",
   "author_name": "E Jones",
   "repo": "github.com/kisamoto/{{cookiecutter.project_slug}}",
   "domain_name": "example.com",
