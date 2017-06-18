@@ -1,5 +1,7 @@
 .PHONY: docker-build
 
+VERSION := $(shell grep "const Version " bin/api/version.go | sed -E 's/.*"(.+)"$$/\1/')
+
 docker-build:
 	@echo Building {{ cookiecutter.repo }}:build
 	@echo

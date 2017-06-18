@@ -17,7 +17,7 @@ $ cookiecutter gh:kisamoto/cookiecutter-golang-api
 
 ## More info
 
-More information is found in the internal [`README`]({{cookiecutter.project_slug/README.md}})
+More information is found in the internal [`README`]({{cookiecutter.project_slug}}/README.md)
 
 ## ToDo
 

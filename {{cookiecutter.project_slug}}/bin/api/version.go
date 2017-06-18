@@ -1,5 +1,3 @@
 package main
 
-const (
-	Version = "{{ cookiecutter.version }}"
-)
+const Version = "{{ cookiecutter.version }}"
