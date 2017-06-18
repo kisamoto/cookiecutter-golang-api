@@ -111,4 +111,3 @@ CREATE TABLE auth.login_log (
 --
 -- {{cookiecutter.project_name}} data insertion
 -- 
--- Create a superadmin role

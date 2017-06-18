@@ -53,7 +53,6 @@ Permission | Description
 
 Role | Permissions | Description
 -----|-------------|-------------
-`superadmin` | `*` | Can modify all attributes of any object, organisation etc. Is created on startup 
 `orgadmin` | `read`, `write`, `edit`, `delete`, `edit-permissions` | Can modify all attributes of objects in an organisation
 `owner` | `read`, `write`, `edit`, `delete`, `edit-permissions` | Owner of an object can modify anything on that object
 `manager` | `read`, `write`, `edit`, `delete` | Object managers can do everything but alter permissions
