@@ -1,5 +1,5 @@
-hash: 89ba152705ecf1078becf9cf21b42afcb2856b7b8e5ed41c65f9941f961f94b2
-updated: 2017-06-08T23:12:56.953111704+08:00
+hash: 73e2f9c863caca37ab913c3b192141ce29e14c7172b4830d2b2387272972fb65
+updated: 2017-06-21T22:29:34.081520562+07:00
 imports:
 - name: github.com/bitly/go-notify
   version: 0a148b8111d688ba7550fc7119fe0d5d8e650838
@@ -49,7 +49,7 @@ imports:
 - name: go.uber.org/atomic
   version: 4e336646b2ef9fc6e47be8e21594178f98e5ebcf
 - name: go.uber.org/zap
-  version: b33459c467c82258245f3bcf0ef26d0fcf2b79f5
+  version: 9cabc84638b70e564c3dab2766efcb1ded2aac9f
   subpackages:
   - buffer
   - internal/bufferpool
@@ -71,6 +71,8 @@ imports:
   subpackages:
   - transform
   - unicode/norm
+- name: gopkg.in/asaskevich/govalidator.v6
+  version: 4918b99a7cb949bb295f3c7bbaf24b577d806e35
 - name: gopkg.in/yaml.v2
   version: cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b
 testImports: []
